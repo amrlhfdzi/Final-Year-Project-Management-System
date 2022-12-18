@@ -31,4 +31,9 @@ Route::get("/projects",[adminControl::class,"project"]);
 
 Route::POST("add",[adminControl::class,'addData']);
 
+Route::get('upd/{title}',[adminControl::class,'showProj']);
+
+Route::POST("edit",[adminControl::class,'update']);
+
+Route::get("/assign",[adminControl::class,"list"]);
 

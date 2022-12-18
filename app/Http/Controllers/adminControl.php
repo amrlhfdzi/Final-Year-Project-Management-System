@@ -23,5 +23,38 @@ class adminControl extends Controller
         return redirect('projects');
 
     }
-    //
+
+    function showProj($yy)
+    {
+        $set=Projek::find($yy);
+
+        return view('admin.updateData',['x'=>$set]);
+    }
+
+    function update(Request $req)
+    {
+        $datas=Projek::find($req->title);
+
+        $datas->student=$req->student;
+        $datas->supervisor=$req->supervisor;
+        $datas->examiner1=$req->examiner1;
+        $datas->examiner2=$req->examiner2;
+
+        $datas->save();
+
+        return redirect('listDisplay');
+        
+    }
+
+    public function list()
+    {
+        return view("admin.listDisplay");
+    }
+
+    function projectList()
+    {
+        $value=Projek::all();
+      return view('admin.listDisplay',['senarai'=>$value]);  
+    }
+    
 }
