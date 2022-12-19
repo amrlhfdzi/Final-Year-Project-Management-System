@@ -3,6 +3,12 @@
 
   <head>
 
+  <style>
+        label {width: 200px; display: inline-block; }
+
+        input {color:#000;}
+    </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -112,45 +118,50 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Main Banner Area Start ***** -->
     <div id="top">
         <div class="container-fluid">
+        <h1> Add Details </h1> <br>
+
+<form action="/plus" method="post">
+@csrf
+
+<label> Project ID: </label> <input type="text" name="id" size=50><br/><br/>
+<label> Project Title: </label> <input type="text" name="title" size=50  ><br/><br/>
+<label> Start Date: </label> <input type="date" name="start" size=50  ><br/><br/>
+<label> End Date: </label> <input type="date" name="end" size=50><br/><br/>
+<label> Project Progress: </label> <select name = "dropdown">
+            <option value = "Choose the option" selected>Choose the option</option>
+            <option value = "Milestone 1">Milestone 1</option>
+            <option value = "Milestone 2">Milestone 2</option>
+            <option value = "Final Report">Final Report</option>
+         </select><br/><br/>
+
+<label> Project Status: </label> <select name = "dropdown2">
+            <option value = "Choose the option" selected>Choose the option</option>
+            <option value = "On track">On track</option>
+            <option value = "Delayed">Delayed</option>
+            <option value = "Extended">Extended</option>
+            <option value = "Completed">Completed</option>
+         </select><br/><br/>
+
+
+
+<br><br><button style="background-color:red; color:black; margin:50px; padding=14px 40px" type=submit value="submit" >Submit</button>
+<button style="background-color:red; color:black" type=reset value="reset">Reset</button>
+
+</form>
             <div class="row">
                 <div class="col-lg-4">
+                    
                     <div class="left-content">
+                        
                         <div class="inner-content">
-                            <h4>KlassyCafe</h4>
-                            <h6>THE BEST EXPERIENCE</h6>
-                            <div class="main-white-button scroll-to-section">
-                                <a href="#reservation">Make A Reservation</a>
-                            </div>
+
+                        
+                        
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="main-banner header-text">
-                        <div class="Modern-Slider">
-                          <!-- Item -->
-                          <div class="item">
-                            <div class="img-fill">
-                                <img src="assets/images/slide-01.jpg" alt="">
-                            </div>
-                          </div>
-                          <!-- // Item -->
-                          <!-- Item -->
-                          <div class="item">
-                            <div class="img-fill">
-                                <img src="assets/images/slide-02.jpg" alt="">
-                            </div>
-                          </div>
-                          <!-- // Item -->
-                          <!-- Item -->
-                          <div class="item">
-                            <div class="img-fill">
-                                <img src="assets/images/slide-03.jpg" alt="">
-                            </div>
-                          </div>
-                          <!-- // Item -->
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -165,25 +176,14 @@ https://templatemo.com/tm-558-klassy-cafe
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
                     <div class="right-text-content">
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
+                            
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
-                        
-                        <br>Design: TemplateMo</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControl;
 use App\Http\Controllers\adminControl;
+use App\Http\Controllers\userControl;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,9 @@ Route::POST("edit",[adminControl::class,'update']);
 Route::get("/assign",[adminControl::class,"list"]);
 
 Route::get("view",[adminControl::class,"projectList"]);
+
+Route::get("/updates",[userControl::class,"baru"]);
+
+Route::get("/details",[userControl::class,"latest"]);
+
+Route::POST("plus",[userControl::class,"addDet"]);
