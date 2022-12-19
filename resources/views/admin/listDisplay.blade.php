@@ -9,7 +9,7 @@
   </head>
   <body>
   <div class="container-scroller">
-@include("admin.navbar"); 
+@include("admin.navbar")
 
 
 <h1> Project List </h1>
@@ -34,7 +34,7 @@
     <td>{{$papar['supervisor']}}</td>
     <td>{{$papar['examiner1']}}</td>
     <td>{{$papar['examiner2']}}</td>
-    <td><a href={{"upd/".$papar['title']}}>Assign Project</a></td>
+    <td><a href={{"upd/".$papar['id']}}>Assign Project</a></td>
 </tr>
 @endforeach
 </table>

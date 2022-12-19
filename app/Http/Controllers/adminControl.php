@@ -16,24 +16,30 @@ class adminControl extends Controller
     {
         $member = new Projek;
         
+        $member->id = $req->id;
         $member->title = $req->title;
         $member->duration = $req->duration;
+        $member->student = $req->student;
+        $member->supervisor = $req->supervisor;
+        $member->examiner1 = $req->examiner1;
+        $member->examiner2 = $req->examiner2;
+      
         $member->save();
 
         return redirect('projects');
 
     }
 
-    function showProj($yy)
+    function showProj($title)
     {
-        $set=Projek::find($yy);
+        $set=Projek::find($title);
 
         return view('admin.updateData',['x'=>$set]);
     }
 
     function update(Request $req)
     {
-        $datas=Projek::find($req->title);
+        $datas=Projek::find($req->id);
 
         $datas->student=$req->student;
         $datas->supervisor=$req->supervisor;
@@ -42,7 +48,7 @@ class adminControl extends Controller
 
         $datas->save();
 
-        return redirect('listDisplay');
+        return redirect('view');
         
     }
 
