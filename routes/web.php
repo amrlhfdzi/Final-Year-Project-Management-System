@@ -45,3 +45,10 @@ Route::get("/updates",[userControl::class,"baru"]);
 Route::get("/details",[userControl::class,"latest"]);
 
 Route::POST("plus",[userControl::class,"addDet"]);
+
+Route::get('upds/{id}',[userControl::class,'showDet']);
+
+Route::POST("edits",[userControl::class,"updates"]);
+
+Route::get("views",[userControl::class,"projectInform"]);
+

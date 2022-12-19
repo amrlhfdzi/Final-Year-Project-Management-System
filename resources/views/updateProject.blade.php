@@ -3,6 +3,12 @@
 
   <head>
 
+  <style>
+        label {width: 200px; display: inline-block; }
+
+        input {color:#000;}
+    </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -56,7 +62,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="{{url('/updates')}}">Update Project</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/views')}}">Update Project</a></li>
                            	
                         <!-- 
                             <li class="submenu">
@@ -112,12 +118,41 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Main Banner Area Start ***** -->
     <div id="top">
         <div class="container-fluid">
+        <h1> Project List </h1>
+
+<table border="border">
+    <tr>
+        <td>Project ID</td>
+        <td>Project Title</td>
+        <td>Project Start Date</td>
+        <td>Project End Date</td>
+        <td>Project Progress</td>
+        <td>Project Status</td>
+        <td>Operations</td>
+                
+</tr>
+
+@foreach($senarai as $papar)
+<tr>
+    <td>{{$papar['id']}}</td>
+    <td>{{$papar['title']}}</td>
+    <td>{{$papar['start']}}</td>
+    <td>{{$papar['end']}}</td>
+    <td>{{$papar['progress']}}</td>
+    <td>{{$papar['status']}}</td>
+    <td><a href={{"upds/".$papar['id']}}>Update Project</a></td>
+</tr>
+@endforeach
+</table>
             <div class="row">
                 <div class="col-lg-4">
+                    
                     <div class="left-content">
-                        <div class="inner-content">
                         
-                            
+                        <div class="inner-content">
+
+                        
+                        
                             
                         </div>
                     </div>

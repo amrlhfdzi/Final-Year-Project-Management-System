@@ -33,5 +33,35 @@ class userControl extends Controller
         return redirect('details');
 
     }
+
+    function showDet($id)
+    {
+        $data=Information::find($id);
+
+        return view('updateDetails',['x'=>$data]);
+    }
+
+    function updates (Request $req)
+    {
+        $test =Information::find($req->id);
+        
+        $test->id = $req->id;
+        $test->title = $req->title;
+        $test->start = $req->start;
+        $test->end = $req->end;
+        $test->progress = $req->dropdown;
+        $test->status = $req->dropdown2;
+      
+        $test->save();
+
+        return redirect('views');
+
+    }
+
+    function projectInform()
+    {
+        $value=Information::all();
+      return view('updateProject',['senarai'=>$value]);  
+    }
     //
 }

@@ -56,7 +56,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="{{url('/updates')}}">Update Project</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/updates')}}"> Notifications</a></li>
                            	
                         <!-- 
                             <li class="submenu">
@@ -68,7 +68,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                            <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/details')}}">Setting</a></li>
                             <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
                             <li class="submenu">
                                 <a href="javascript:;">Features</a>
