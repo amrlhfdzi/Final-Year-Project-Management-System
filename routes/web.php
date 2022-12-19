@@ -52,3 +52,5 @@ Route::POST("edits",[userControl::class,"updates"]);
 
 Route::get("views",[userControl::class,"projectInform"]);
 
+Route::get("viewall",[userControl::class,"projectView"]);
+

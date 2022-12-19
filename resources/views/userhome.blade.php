@@ -69,7 +69,7 @@ https://templatemo.com/tm-558-klassy-cafe
                             </li>
                         -->
                             <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
-                            <li class="scroll-to-section"><a href="#chefs">View Project</a></li> 
+                            <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
                             <li class="submenu">
                                 <a href="javascript:;">Features</a>
                                 <ul>

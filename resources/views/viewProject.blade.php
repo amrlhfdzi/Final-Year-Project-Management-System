@@ -118,36 +118,32 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Main Banner Area Start ***** -->
     <div id="top">
         <div class="container-fluid">
-        <h1> Add Details </h1> <br>
+        <h1> Project List </h1>
 
-<form action="/plus" method="post">
-@csrf
+<table border="border">
+    <tr>
+        <td>Project ID</td>
+        <td>Project Title</td>
+        <td>Project Start Date</td>
+        <td>Project End Date</td>
+        <td>Project Progress</td>
+        <td>Project Status</td>
+        
+                
+</tr>
 
-<label> Project ID: </label> <input type="text" name="id" size=50><br/><br/>
-<label> Project Title: </label> <input type="text" name="title" size=50  ><br/><br/>
-<label> Start Date: </label> <input type="date" name="start" size=50  ><br/><br/>
-<label> End Date: </label> <input type="date" name="end" size=50><br/><br/>
-<label> Project Progress: </label> <select name = "dropdown">
-            <option value = "Choose the option" selected>Choose the option</option>
-            <option value = "Milestone 1">Milestone 1</option>
-            <option value = "Milestone 2">Milestone 2</option>
-            <option value = "Final Report">Final Report</option>
-         </select><br/><br/>
-
-<label> Project Status: </label> <select name = "dropdown2">
-            <option value = "Choose the option" selected>Choose the option</option>
-            <option value = "On track">On track</option>
-            <option value = "Delayed">Delayed</option>
-            <option value = "Extended">Extended</option>
-            <option value = "Completed">Completed</option>
-         </select><br/><br/>
-
-
-
-<br><br><button style="background-color:red; color:black; margin:50px; padding=14px 40px" type=submit value="submit" >Submit</button>
-<button style="background-color:red; color:black" type=reset value="reset">Reset</button>
-
-</form>
+@foreach($senarais as $papar)
+<tr>
+    <td>{{$papar['id']}}</td>
+    <td>{{$papar['title']}}</td>
+    <td>{{$papar['start']}}</td>
+    <td>{{$papar['end']}}</td>
+    <td>{{$papar['progress']}}</td>
+    <td>{{$papar['status']}}</td>
+    
+</tr>
+@endforeach
+</table>
             <div class="row">
                 <div class="col-lg-4">
                     

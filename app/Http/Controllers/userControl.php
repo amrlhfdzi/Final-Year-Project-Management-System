@@ -63,5 +63,12 @@ class userControl extends Controller
         $value=Information::all();
       return view('updateProject',['senarai'=>$value]);  
     }
+
+    public function projectView()
+    {
+        $values=Information::all();
+      return view('viewProject',['senarais'=>$values]);
+    }
+
     //
 }
