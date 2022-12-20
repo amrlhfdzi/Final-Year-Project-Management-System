@@ -1,12 +1,20 @@
 
       
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-       <h1>Admin Page </h1>
+      <nav style="background-color:black" class="sidebar sidebar-offcanvas" id="sidebar">
+       
     <ul class="nav">
-         
+    <h1>Admin Page </h1>
           <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/icons/mdi.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Home</span>
+            </a>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('/projects')}}">
@@ -25,22 +33,7 @@
               <span class="menu-title">Assign Project</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/tables/basic-table.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
-              </span>
-              <span class="menu-title">Tables</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
-              </span>
-              <span class="menu-title">Charts</span>
-            </a>
-          </li>
+          
           
         </ul>
       </nav>
@@ -52,6 +45,9 @@
         </nav>
         <!-- partial -->
         <div class="main-panel">
+        
+         
+
          
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->

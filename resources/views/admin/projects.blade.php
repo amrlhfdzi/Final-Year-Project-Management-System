@@ -6,9 +6,11 @@
 <html lang="en">
   <head>
     <style>
-        label {width: 200px; display: inline-block; }
+        label {width: 200px; display: inline-block; padding:30px; }
 
         input {color:#000;}
+
+        h1 {padding:30px;}
     </style>
    @include("admin.admincss")
   </head>
@@ -16,7 +18,7 @@
   <div class="container-scroller">
 @include("admin.navbar")
 
-<h1> Create Projects </h1>
+<h1> Create Projects </h1><br><br>
 
 <form action="/add" method="post">
 @csrf

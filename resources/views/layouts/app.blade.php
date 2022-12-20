@@ -19,9 +19,7 @@
     <body class="font-sans antialiased">
         <div class="">
             @livewire('navigation-menu')
-
             <!-- Page Heading -->
-            
 
             <!-- Page Content -->
             <main>

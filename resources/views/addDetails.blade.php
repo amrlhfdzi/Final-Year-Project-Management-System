@@ -147,8 +147,8 @@ https://templatemo.com/tm-558-klassy-cafe
 
 
 
-<br><br><button style="background-color:red; color:black; margin:50px; padding=14px 40px" type=submit value="submit" >Submit</button>
-<button style="background-color:red; color:black" type=reset value="reset">Reset</button>
+<br><br><button style="background-color:pink; color:black; margin:50px; padding=14px 40px; width=250px" type=submit value="submit" >Submit</button>
+<button style="background-color:pink; color:black" type=reset value="reset">Reset</button>
 
 </form>
         </div>

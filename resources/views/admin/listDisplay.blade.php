@@ -11,23 +11,25 @@
   <div class="container-scroller">
 @include("admin.navbar")
 
+<div style="position: relative; top: 60px; right: -150px">
+<h1> Project List </h1> <br><br>
 
-<h1> Project List </h1>
-
-<table bgcolor="grey" border="3px">
+<table bgcolor="grey" border="3px" >
     <tr>
-        <td>Project Title</td>
-        <td>Project Duration</td>
-        <td>Student</td>
-        <td>Supervisor</td>
-        <td>Examiner 1</td>
-        <td>Examiner 2</td>
-        <td>Operations</td>
+        <td style="padding: 30px">Project ID</td>
+        <td style="padding: 30px">Project Title</td>
+        <td style="padding: 30px">Project Duration</td>
+        <td style="padding: 30px">Student</td>
+        <td style="padding: 30px">Supervisor</td>
+        <td style="padding: 30px">Examiner 1</td>
+        <td style="padding: 30px">Examiner 2</td>
+        <td style="padding: 30px">Operations</td>
         
 </tr>
 
 @foreach($senarai as $papar)
-<tr>
+<tr align="center">
+    <td>{{$papar['id']}}</td>
     <td>{{$papar['title']}}</td>
     <td>{{$papar['duration']}}</td>
     <td>{{$papar['student']}}</td>
@@ -39,6 +41,7 @@
 @endforeach
 </table>
 
+</div>
 </div>
 @include("admin.adminscript")   
   </body>
