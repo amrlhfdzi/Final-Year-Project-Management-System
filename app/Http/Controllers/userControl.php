@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Information;
+use App\Models\Projek;
 
 class userControl extends Controller
 {
@@ -66,7 +67,7 @@ class userControl extends Controller
 
     public function projectView()
     {
-        $values=Information::all();
+        $values=Projek::all();
       return view('viewProject',['senarais'=>$values]);
     }
 

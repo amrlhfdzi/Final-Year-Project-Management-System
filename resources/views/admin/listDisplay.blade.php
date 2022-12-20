@@ -14,7 +14,7 @@
 
 <h1> Project List </h1>
 
-<table border="border">
+<table bgcolor="grey" border="3px">
     <tr>
         <td>Project Title</td>
         <td>Project Duration</td>

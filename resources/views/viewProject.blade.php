@@ -3,12 +3,6 @@
 
   <head>
 
-  <style>
-        label {width: 200px; display: inline-block; }
-
-        input {color:#000;}
-    </style>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -57,11 +51,13 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                        </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/views')}}">Update Project</a></li>
                            	
                         <!-- 
@@ -74,19 +70,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                            <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                        <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
                             <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li>
+                            
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="#reservation">Setting</a></li> 
                             <li>
                             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -104,7 +92,6 @@ https://templatemo.com/tm-558-klassy-cafe
                     @endauth
                 </div>
             @endif
-</li>
                         </ul>        
                         
                         <!-- ***** Menu End ***** -->
@@ -116,55 +103,59 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
-    <div id="top">
-        <div class="container-fluid">
-        <h1> Project List </h1>
-
-<table border="border">
-    <tr>
-        <td>Project ID</td>
-        <td>Project Title</td>
-        <td>Project Start Date</td>
-        <td>Project End Date</td>
-        <td>Project Progress</td>
-        <td>Project Status</td>
-        
-                
-</tr>
-
-@foreach($senarais as $papar)
-<tr>
-    <td>{{$papar['id']}}</td>
-    <td>{{$papar['title']}}</td>
-    <td>{{$papar['start']}}</td>
-    <td>{{$papar['end']}}</td>
-    <td>{{$papar['progress']}}</td>
-    <td>{{$papar['status']}}</td>
-    
-</tr>
-@endforeach
-</table>
-            <div class="row">
-                <div class="col-lg-4">
-                    
-                    <div class="left-content">
-                        
-                        <div class="inner-content">
-
-                        
-                        
-                            
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
+   
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** About Area Starts ***** -->
+    
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Menu Area Starts ***** -->
+    <section class="section" id="menu">
+        <div class="container">
+        <div class="section-heading">
+        <h2> Project List </h2>
+</div>
+
+<table bgcolor="pink" border="3px">
+    <tr>
+        <td style="padding: 30px">Project ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="padding: 30px">Project Title&nbsp;&nbsp;&nbsp;</td>
+        <td style="padding: 30px">Project Duration &nbsp;&nbsp;</td>
+        <td style="padding: 30px">Student&nbsp;&nbsp;</td>
+        <td style="padding: 30px">Supervisor&nbsp;&nbsp;</td>
+        <td style="padding: 30px">Examiner 1&nbsp;&nbsp;</td>
+        <td style="padding: 30px">Examiner 2&nbsp;&nbsp;</td>
+       
+        
+</tr>
+
+@foreach($senarais as $papar)
+<tr align="center">
+    <td>{{$papar['id']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['title']}}&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['duration']}}&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['student']}}&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['supervisor']}}&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['examiner1']}}&nbsp;&nbsp;&nbsp;</td>
+    <td>{{$papar['examiner2']}}&nbsp;&nbsp;&nbsp;</td>
+</tr>
+@endforeach
+</table>
+        </div>
+        
+
+
+    </section>
+    <!-- ***** Menu Area Ends ***** -->
+
+    <!-- ***** Chefs Area Starts ***** -->
    
+    <!-- ***** Chefs Area Ends ***** -->
+
+    <!-- ***** Reservation Us Area Starts ***** -->
+    
+    <!-- ***** Chefs Area Ends ***** --> 
     
     <!-- ***** Footer Start ***** -->
     <footer>
@@ -172,14 +163,25 @@ https://templatemo.com/tm-558-klassy-cafe
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
                     <div class="right-text-content">
-                            
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    
+                    <div class="left-text-content">
+                        <p>© Copyright Klassy Cafe Co.
+                        
+                        <br>Design: TemplateMo</p>
+                    </div>
                 </div>
             </div>
         </div>

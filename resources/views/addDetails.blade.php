@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
   <style>
         label {width: 200px; display: inline-block; }
 
@@ -46,7 +45,7 @@ https://templatemo.com/tm-558-klassy-cafe
             <div></div>
             <div></div>
         </div>
-    </div>  
+   </div>  
     <!-- ***** Preloader End ***** -->
     
     
@@ -57,11 +56,13 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                        </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/views')}}">Update Project</a></li>
                            	
                         <!-- 
@@ -74,19 +75,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                            <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                        <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
                             <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li>
+                            
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
-                            <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="#reservation">Setting</a></li> 
                             <li>
                             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -105,7 +98,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
             @endif
 </li>
-                        </ul>        
+                        </ul>   
                         
                         <!-- ***** Menu End ***** -->
                     </nav>
@@ -116,9 +109,19 @@ https://templatemo.com/tm-558-klassy-cafe
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
-    <div id="top">
-        <div class="container-fluid">
-        <h1> Add Details </h1> <br>
+   
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Menu Area Starts ***** -->
+    <section class="section" id="menu">
+        <div class="container">
+        <div class="section-heading">
+        <h2> Add Details </h2> <br>
+</div>
 
 <form action="/plus" method="post">
 @csrf
@@ -148,27 +151,20 @@ https://templatemo.com/tm-558-klassy-cafe
 <button style="background-color:red; color:black" type=reset value="reset">Reset</button>
 
 </form>
-            <div class="row">
-                <div class="col-lg-4">
-                    
-                    <div class="left-content">
-                        
-                        <div class="inner-content">
-
-                        
-                        
-                            
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
         </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
+        
 
-    <!-- ***** About Area Starts ***** -->
+
+    </section>
+    <!-- ***** Menu Area Ends ***** -->
+
+    <!-- ***** Chefs Area Starts ***** -->
    
+    <!-- ***** Chefs Area Ends ***** -->
+
+    <!-- ***** Reservation Us Area Starts ***** -->
+    
+    <!-- ***** Chefs Area Ends ***** --> 
     
     <!-- ***** Footer Start ***** -->
     <footer>
@@ -176,14 +172,25 @@ https://templatemo.com/tm-558-klassy-cafe
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
                     <div class="right-text-content">
-                            
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    
+                    <div class="left-text-content">
+                        <p>© Copyright Klassy Cafe Co.
+                        
+                        <br>Design: TemplateMo</p>
+                    </div>
                 </div>
             </div>
         </div>
