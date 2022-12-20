@@ -2,8 +2,11 @@
       
       <!-- partial:partials/_sidebar.html -->
       <nav style="background-color:black" class="sidebar sidebar-offcanvas" id="sidebar">
-       
-    <ul class="nav">
+      
+        <div style="background-color:white" class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        <a class="brand-logo-mini" href="index.html"><img src="assets/images/fypp1.png" alt="logo" height=150 width=150 /></a> 
+</div>
+          <ul class="nav">
     <h1>Admin Page </h1>
           <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>

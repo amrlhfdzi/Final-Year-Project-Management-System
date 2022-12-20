@@ -13,7 +13,7 @@
 @include("admin.navbar")
 
 
-<h1> Welcome to Admin Page </h2>
+<h1 style="padding:30px"> Welcome to Admin Page </h2>
 
 
 </div>

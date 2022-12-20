@@ -51,8 +51,11 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        
+                        <a href="index.html" class="logo">
+                        <img src="assets/images/fypp1.png" align="klassy cafe html template" height=130 width=130>
+                        </a>
                         <!-- ***** Logo End ***** -->
+                        
                         <!-- ***** Menu Start ***** -->
                         
                         <ul class="nav">
@@ -142,29 +145,7 @@ https://templatemo.com/tm-558-klassy-cafe
    
     
     <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="right-text-content">
-                            
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/images/fyp2.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="left-text-content">
-                        <p>
-                        
-                        <br></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
