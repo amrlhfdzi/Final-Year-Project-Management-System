@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>Final Year Project Management System</title>
 <!--
     
 TemplateMo 558 Klassy Cafe
@@ -119,20 +119,20 @@ https://templatemo.com/tm-558-klassy-cafe
 
 <table bgcolor="pink" border="3px">
     <tr>
-        <td style="padding: 30px">Project ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="padding: 30px">Project Title&nbsp;&nbsp;&nbsp;</td>
-        <td style="padding: 30px">Project Duration &nbsp;&nbsp;</td>
-        <td style="padding: 30px">Student&nbsp;&nbsp;</td>
-        <td style="padding: 30px">Supervisor&nbsp;&nbsp;</td>
-        <td style="padding: 30px">Examiner 1&nbsp;&nbsp;</td>
-        <td style="padding: 30px">Examiner 2&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Project ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Project Title&nbsp;&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Project Duration &nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Student&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Supervisor&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Examiner 1&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Examiner 2&nbsp;&nbsp;</td>
        
         
 </tr>
 
 @foreach($senarais as $papar)
 <tr align="center">
-    <td>{{$papar['id']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td style="padding: 30px">{{$papar['id']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['title']}}&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['duration']}}&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['student']}}&nbsp;&nbsp;&nbsp;</td>

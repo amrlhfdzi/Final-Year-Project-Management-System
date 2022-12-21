@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
+    <title>Final Year Project Management System</title>
 <!--
     
 TemplateMo 558 Klassy Cafe
@@ -120,25 +120,25 @@ https://templatemo.com/tm-558-klassy-cafe
         
 <table bgcolor="pink" border="3px">
     <tr>
-        <td style="padding: 30px">Project ID</td>
-        <td style="padding: 30px">Project Title</td>
-        <td style="padding: 30px">Project Start Date</td>
-        <td style="padding: 30px">Project End Date</td>
-        <td style="padding: 30px">Project Progress</td>
-        <td style="padding: 30px">Project Status</td>
-        <td style="padding: 30px">Operations</td>
+        <td style="padding: 30px; font-weight: bold">Project ID</td>
+        <td style="padding: 30px; font-weight: bold">Project Title</td>
+        <td style="padding: 30px; font-weight: bold">Project Start Date</td>
+        <td style="padding: 30px; font-weight: bold">Project End Date</td>
+        <td style="padding: 30px; font-weight: bold">Project Progress</td>
+        <td style="padding: 30px; font-weight: bold">Project Status</td>
+        <td style="padding: 30px; font-weight: bold">Operations</td>
                 
 </tr>
 
 @foreach($senarai as $papar)
 <tr align="center">
-    <td>{{$papar['id']}}</td>
+    <td style="padding: 30px">{{$papar['id']}}</td>
     <td>{{$papar['title']}}</td>
     <td>{{$papar['start']}}</td>
     <td>{{$papar['end']}}</td>
     <td>{{$papar['progress']}}</td>
     <td>{{$papar['status']}}</td>
-    <td><a href={{"upds/".$papar['id']}}>Update Project</a></td>
+    <td style="color: red"><a href={{"upds/".$papar['id']}}>Update Project</a></td>
 </tr>
 @endforeach
 </table>

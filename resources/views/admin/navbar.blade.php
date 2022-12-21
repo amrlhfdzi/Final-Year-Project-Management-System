@@ -7,7 +7,7 @@
         <a class="brand-logo-mini" href="index.html"><img src="assets/images/fypp1.png" alt="logo" height=150 width=150 /></a> 
 </div>
           <ul class="nav">
-    <h1>Admin Page </h1>
+    <h1>Admin </h1>
           <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
           </li>
