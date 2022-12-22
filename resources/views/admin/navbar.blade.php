@@ -1,9 +1,9 @@
 
       
       <!-- partial:partials/_sidebar.html -->
-      <nav style="background-color:black" class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav style="background-color:DarkGrey" class="sidebar sidebar-offcanvas" id="sidebar">
       
-        <div style="background-color:white" class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        <div style="background-color:DarkGrey" class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="brand-logo-mini" href="index.html"><img src="assets/images/fypp1.png" alt="logo" height=150 width=150 /></a> 
 </div>
           <ul class="nav">

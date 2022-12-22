@@ -18,7 +18,7 @@
     <tr>
         <td style="padding: 30px;font-weight: bold">Project ID</td>
         <td style="padding: 30px;font-weight: bold">Project Title</td>
-        <td style="padding: 30px;font-weight: bold">Project Duration</td>
+        <td style="padding: 30px;font-weight: bold">Project Duration (Month)</td>
         <td style="padding: 30px;font-weight: bold">Student</td>
         <td style="padding: 30px;font-weight: bold">Supervisor</td>
         <td style="padding: 30px;font-weight: bold">Examiner 1</td>
