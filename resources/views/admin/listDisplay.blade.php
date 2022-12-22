@@ -15,12 +15,11 @@
 <h1> Project List </h1> <br><br>
 
 <table bgcolor="grey" border="3px" >
-    <tr>
+    <tr align="center">
         <td style="padding: 30px;font-weight: bold">Project ID</td>
         <td style="padding: 30px;font-weight: bold">Project Title</td>
-        <td style="padding: 30px;font-weight: bold">Project Duration (Month)</td>
-        <td style="padding: 30px;font-weight: bold">Student</td>
-        <td style="padding: 30px;font-weight: bold">Supervisor</td>
+        <td style="padding: 30px;font-weight: bold">Student Name</td>
+        <td style="padding: 30px;font-weight: bold">Supervisor Name</td>
         <td style="padding: 30px;font-weight: bold">Examiner 1</td>
         <td style="padding: 30px;font-weight: bold">Examiner 2</td>
         <td style="padding: 30px;font-weight: bold">Operations</td>
@@ -31,7 +30,7 @@
 <tr align="center">
     <td style="padding: 30px">{{$papar['id']}}</td>
     <td>{{$papar['title']}}</td>
-    <td>{{$papar['duration']}}</td>
+    
     <td>{{$papar['student']}}</td>
     <td>{{$papar['supervisor']}}</td>
     <td>{{$papar['examiner1']}}</td>

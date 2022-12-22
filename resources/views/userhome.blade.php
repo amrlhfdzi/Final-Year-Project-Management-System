@@ -70,7 +70,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                        <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                        
                             <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
                             
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->

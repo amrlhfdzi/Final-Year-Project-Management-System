@@ -128,6 +128,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
 <label> Project ID: </label> <input type="text" name="id" size=50><br/><br/>
 <label> Project Title: </label> <input type="text" name="title" size=50  ><br/><br/>
+<label> Project Duration (Month): </label> <input type="text" name="duration" size=50  ><br/><br/>
 <label> Start Date: </label> <input type="date" name="start" size=50  ><br/><br/>
 <label> End Date: </label> <input type="date" name="end" size=50><br/><br/>
 <label> Project Progress: </label> <select name = "dropdown">

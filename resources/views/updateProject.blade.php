@@ -57,7 +57,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="#{{url('/redirect')}}" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/views')}}">Update Project</a></li>
                            	
                         <!-- 
@@ -70,7 +70,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                        <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                        
                             <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
                             
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
@@ -118,27 +118,39 @@ https://templatemo.com/tm-558-klassy-cafe
         <h2> Project Details </h2>
         </div>
         
-<table bgcolor="pink" border="3px">
+<table bgcolor="pink" border="border">
     <tr>
-        <td style="padding: 30px; font-weight: bold">Project ID</td>
-        <td style="padding: 30px; font-weight: bold">Project Title</td>
-        <td style="padding: 30px; font-weight: bold">Project Start Date</td>
-        <td style="padding: 30px; font-weight: bold">Project End Date</td>
-        <td style="padding: 30px; font-weight: bold">Project Progress</td>
-        <td style="padding: 30px; font-weight: bold">Project Status</td>
-        <td style="padding: 30px; font-weight: bold">Operations</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project ID</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project Title</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Student Name</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Supervisor Name</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project Start Date</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project End Date</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project Duration (Month)</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project Progress</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Project Status</td>
+        <td style="padding: 30px; font-weight: bold" align="center">Operations</td>
                 
 </tr>
 
 @foreach($senarai as $papar)
 <tr align="center">
     <td style="padding: 30px">{{$papar['id']}}</td>
-    <td>{{$papar['title']}}</td>
+    <td >{{$papar['title']}}</td>
+    <td >{{$papar['student']}}</td>
+    <td >{{$papar['supervisor']}}</td>
     <td>{{$papar['start']}}</td>
     <td>{{$papar['end']}}</td>
+    <td>{{$papar['duration']}}</td>
     <td>{{$papar['progress']}}</td>
     <td>{{$papar['status']}}</td>
+    @if($papar['supervisor']!=Auth::user()->name)
+    <td> Not Allowed </td>
+    @else
     <td style="color: red"><a href={{"upds/".$papar['id']}}>Update Project</a></td>
+     
+    
+    @endif
 </tr>
 @endforeach
 </table>

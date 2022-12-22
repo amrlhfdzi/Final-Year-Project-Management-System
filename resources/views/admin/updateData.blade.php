@@ -14,13 +14,13 @@
     <input type="hidden" name="id" value="{{$x['id']}}">
     <br/><br/>
 
-    <label>Title: </label> <input type="text" name="title" value="{{$x['title']}}">
+    <label>Project Title: </label> <input type="text" name="title" value="{{$x['title']}}">
     <br/><br/>
 
-    <label>Student: </label> <input type="text" name="student" value="{{$x['student']}}">
+    <label>Student Name: </label> <input type="text" name="student" value="{{$x['student']}}">
     <br/><br/>
 
-    <label>Supervisor: </label> <input type="text" name="supervisor" value="{{$x['supervisor']}}">
+    <label>Supervisor Name: </label> <input type="text" name="supervisor" value="{{$x['supervisor']}}">
     <br/><br/>
 
     <label>Examiner 1: </label> <input type="text" name="examiner1" value="{{$x['examiner1']}}">

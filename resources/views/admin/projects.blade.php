@@ -23,11 +23,11 @@
 <form action="/add" method="post">
 @csrf
 
-<label> ID: </label> <input type="text" name="id" size=50  ><br/><br/>
-<label> Title: </label> <input type="text" name="title" size=50  ><br/><br/>
-<label> Duration (Month): </label> <input type="text" name="duration" size=50><br/><br/>
-<label> Student: </label> <input type="text" name="student" size=50><br/><br/>
-<label> Supervisor: </label> <input type="text" name="supervisor" size=50><br/><br/>
+<label> Project ID: </label> <input type="text" name="id" size=50  ><br/><br/>
+<label> Project Title: </label> <input type="text" name="title" size=50  ><br/><br/>
+
+<label> Student Name: </label> <input type="text" name="student" size=50><br/><br/>
+<label> Supervisor Name: </label> <input type="text" name="supervisor" size=50><br/><br/>
 <label> Examiner 1: </label> <input type="text" name="examiner1" size=50><br/><br/>
 <label> Examiner 2: </label> <input type="text" name="examiner2" size=50><br/><br/>
 

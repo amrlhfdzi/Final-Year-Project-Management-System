@@ -11,17 +11,21 @@
 <form action="/edits" method="POST">
     @csrf
 
-    <input type="hidden" name="id" value="{{$x['id']}}">
+    <label> Project ID: </label> <input type="text" name="id" value="{{$x['id']}}">
     <br/><br/>
 
 
-    <label>Title: </label> <input type="text" name="title" value="{{$x['title']}}">
+    <label> Project Title: </label> <input type="text" name="title" value="{{$x['title']}}">
     <br/><br/>
+
 
     <label>Project Start Date: </label> <input type="date" name="start"  value="{{$x['start']}}">
     <br/><br/>
 
     <label>Project End Date: </label> <input type="date" name="end" value="{{$x['end']}}">
+    <br/><br/>
+
+    <label>Project Duration (Month): </label> <input type="text" name="duration" value="{{$x['duration']}}">
     <br/><br/>
 
     <label>Project Progress: </label> <select name = "dropdown">

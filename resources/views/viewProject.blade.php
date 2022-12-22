@@ -57,7 +57,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{url('/redirect')}}" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/views')}}">Update Project</a></li>
                            	
                         <!-- 
@@ -70,7 +70,7 @@ https://templatemo.com/tm-558-klassy-cafe
                                 </ul>
                             </li>
                         -->
-                        <li class="scroll-to-section"><a href="{{url('/details')}}">Add Project Details</a></li>
+                        
                             <li class="scroll-to-section"><a href="{{url('/viewall')}}">View Projects</a></li> 
                             
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
@@ -118,12 +118,12 @@ https://templatemo.com/tm-558-klassy-cafe
 </div>
 
 <table bgcolor="pink" border="3px">
-    <tr>
+    <tr align="center">
         <td style="padding: 30px; font-weight: bold">Project ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="padding: 30px; font-weight: bold">Project Title&nbsp;&nbsp;&nbsp;</td>
-        <td style="padding: 30px; font-weight: bold">Project Duration &nbsp;&nbsp;</td>
-        <td style="padding: 30px; font-weight: bold">Student&nbsp;&nbsp;</td>
-        <td style="padding: 30px; font-weight: bold">Supervisor&nbsp;&nbsp;</td>
+        
+        <td style="padding: 30px; font-weight: bold">Student Name&nbsp;&nbsp;</td>
+        <td style="padding: 30px; font-weight: bold">Supervisor Name&nbsp;&nbsp;</td>
         <td style="padding: 30px; font-weight: bold">Examiner 1&nbsp;&nbsp;</td>
         <td style="padding: 30px; font-weight: bold">Examiner 2&nbsp;&nbsp;</td>
        
@@ -134,7 +134,7 @@ https://templatemo.com/tm-558-klassy-cafe
 <tr align="center">
     <td style="padding: 30px">{{$papar['id']}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['title']}}&nbsp;&nbsp;&nbsp;</td>
-    <td>{{$papar['duration']}}&nbsp;&nbsp;&nbsp;</td>
+    
     <td>{{$papar['student']}}&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['supervisor']}}&nbsp;&nbsp;&nbsp;</td>
     <td>{{$papar['examiner1']}}&nbsp;&nbsp;&nbsp;</td>

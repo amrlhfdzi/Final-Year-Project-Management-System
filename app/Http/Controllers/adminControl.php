@@ -18,7 +18,7 @@ class adminControl extends Controller
         
         $member->id = $req->id;
         $member->title = $req->title;
-        $member->duration = $req->duration;
+       
         $member->student = $req->student;
         $member->supervisor = $req->supervisor;
         $member->examiner1 = $req->examiner1;

@@ -24,6 +24,7 @@ class userControl extends Controller
         
         $member->id = $req->id;
         $member->title = $req->title;
+        $member->duration = $req->duration;
         $member->start = $req->start;
         $member->end = $req->end;
         $member->progress = $req->dropdown;
@@ -37,19 +38,21 @@ class userControl extends Controller
 
     function showDet($id)
     {
-        $data=Information::find($id);
+        $data=Projek::find($id);
 
         return view('updateDetails',['x'=>$data]);
     }
 
     function updates (Request $req)
     {
-        $test =Information::find($req->id);
+        $test =Projek::find($req->id);
         
         $test->id = $req->id;
         $test->title = $req->title;
+        
         $test->start = $req->start;
         $test->end = $req->end;
+        $test->duration = $req->duration;
         $test->progress = $req->dropdown;
         $test->status = $req->dropdown2;
       
@@ -61,7 +64,7 @@ class userControl extends Controller
 
     function projectInform()
     {
-        $value=Information::all();
+        $value=Projek::all();
       return view('updateProject',['senarai'=>$value]);  
     }
 
