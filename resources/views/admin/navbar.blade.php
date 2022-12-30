@@ -33,7 +33,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Assign Project</span>
+              <span class="menu-title">Assigned Project</span>
             </a>
           </li>
           

@@ -16,19 +16,19 @@
 
 <table bgcolor="grey" border="3px" >
     <tr align="center">
-        <td style="padding: 30px;font-weight: bold">Project ID</td>
-        <td style="padding: 30px;font-weight: bold">Project Title</td>
-        <td style="padding: 30px;font-weight: bold">Student Name</td>
-        <td style="padding: 30px;font-weight: bold">Supervisor Name</td>
-        <td style="padding: 30px;font-weight: bold">Examiner 1</td>
-        <td style="padding: 30px;font-weight: bold">Examiner 2</td>
-        <td style="padding: 30px;font-weight: bold">Operations</td>
+        
+        <td style="padding: 20px;font-weight: bold">Project Title</td>
+        <td style="padding: 20px;font-weight: bold">Student Name</td>
+        <td style="padding: 20px;font-weight: bold">Supervisor Name</td>
+        <td style="padding: 20px;font-weight: bold">Examiner 1</td>
+        <td style="padding: 20px;font-weight: bold">Examiner 2</td>
+        <td style="padding: 20px;font-weight: bold">Operations</td>
         
 </tr>
 
 @foreach($senarai as $papar)
 <tr align="center">
-    <td style="padding: 30px">{{$papar['id']}}</td>
+    
     <td>{{$papar['title']}}</td>
     
     <td>{{$papar['student']}}</td>

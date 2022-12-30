@@ -30,9 +30,9 @@ class adminControl extends Controller
 
     }
 
-    function showProj($title)
+    function showProj($id)
     {
-        $set=Projek::find($title);
+        $set=Projek::find($id);
 
         return view('admin.updateData',['x'=>$set]);
     }
@@ -52,10 +52,10 @@ class adminControl extends Controller
         
     }
 
-    public function list()
-    {
-        return view("admin.listDisplay");
-    }
+    // public function list()
+    // {
+    //     return view("admin.listDisplay");
+    // }
 
     function projectList()
     {

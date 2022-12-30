@@ -36,15 +36,15 @@ Route::get('upd/{id}',[adminControl::class,'showProj']);
 
 Route::POST("edit",[adminControl::class,'update']);
 
-Route::get("/assign",[adminControl::class,"list"]);
+// Route::get("/assign",[adminControl::class,"list"]);
 
 Route::get("view",[adminControl::class,"projectList"]);
 
-Route::get("/updates",[userControl::class,"baru"]);
+// Route::get("/updates",[userControl::class,"baru"]);
 
-Route::get("/details",[userControl::class,"latest"]);
+// Route::get("/details",[userControl::class,"latest"]);
 
-Route::POST("plus",[userControl::class,"addDet"]);
+// Route::POST("plus",[userControl::class,"addDet"]);
 
 Route::get('upds/{id}',[userControl::class,'showDet']);
 
